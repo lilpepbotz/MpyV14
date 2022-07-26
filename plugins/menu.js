@@ -38,7 +38,7 @@ const defaultMenu = {
   before: `
 ╔════════════════╗
 ╠➤👤𝙊𝙬𝙣𝙚𝙧 : ${global.ownername}
-╠➤💻𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : 𝙂𝙚𝙢𝙥𝙮
+╠➤💻𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : ALWI
 ╠➤⏰𝙐𝙥𝙩𝙞𝙢𝙚 : %uptime
 ╠➤🗓️𝙏𝙖𝙣𝙜𝙜𝙖𝙡: %date
 ╚═══════╦════════╝
@@ -157,13 +157,13 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    let url = `https://i.postimg.cc/nrMn3sMN/menu.jpg`
-    conn.sendHydrated(m.chat, text.trim(), 'ℙ𝔼𝕄𝔹𝕌𝔸𝕋 𝕊ℂ ➢ 𝔾𝔼𝕄ℙ𝕐', null, 'https://www.youtube.com/channel/UCZoVmApPxtLYgUWwBD4nbCw', 'ʏᴏᴜᴛᴜʙᴇ ɢᴇᴍᴘʏ', '', '', [
+    let url = `https://telegra.ph/file/73f928df69f5c0cc14eb8.jpg`
+    conn.sendHydrated(m.chat, text.trim(), 'PEMBUAT SC➢ ALWI', null, 'https://chat.whatsapp.com/D8jEgAYOBGFBIAHRx9JAt9', 'GROUP NIU', '', '', [
       ['𝗚𝗥𝗨𝗣 𝗕𝗢𝗧', '/donasi'],
       ['𝗝𝗔𝗦𝗔 𝗥𝗨𝗡', '/sewa'],
       ['✿𝗢𝗪𝗡𝗘𝗥✿', '/owner']
     ], m)
-    /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
+    /*let url = `https://telegra.ph/file/73f928df69f5c0cc14eb8.jpg`.trim()
     let res = await fetch(url)
     let buffer = await res.buffer()
     let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUploadToServer })
